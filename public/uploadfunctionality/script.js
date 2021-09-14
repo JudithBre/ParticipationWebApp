@@ -10,7 +10,9 @@
 function sendAsset(){
   let goAsset = new XMLHttpRequest();
   let myData = document.getElementByID("name").value;
-
+  let myFile = document.getElementByID("Draft").value;
+  let myCheck = document.getElementByID("checkbox").value;
+  let myPost = "myData"+encodeURIComponent(myData) + myFile + myCheck;
 
   // Event Handler fuer die Response vom Server
   goAsset.onload = function () {
@@ -26,5 +28,5 @@ function sendAsset(){
   };
 
   goAsset.open("POST", "http://giv-project10.uni-muenster.de/api/asset", true);
-  goAsset.send();
+  goAsset.send(myPost);
 }
