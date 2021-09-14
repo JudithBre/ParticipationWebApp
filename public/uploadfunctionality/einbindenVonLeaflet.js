@@ -6,8 +6,8 @@
 // jshint -W083
 "use strict";
 
-const lat = 51.96897313542579;
-const lon = 7.596425373765546;
+const lat = 51.96928869301577;
+const lon = 7.596481577258518;
 
 const start_latlng = [lat, lon];
 
