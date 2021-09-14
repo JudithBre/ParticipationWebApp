@@ -25,11 +25,6 @@ let marker1 = L.marker([51.96784585567931, 7.596464252259507]).addTo(map)
  marker4 = L.marker([51.9686147392282, 7.596396925911135]).addTo(map)
 .bindPopup('Marker 4');
 
-var dreiecksstaender1 = L.layerGroup([marker1]);
-var dreiecksstaender2 = L.layerGroup([marker2]);
-var dreiecksstaender3 = L.layerGroup([marker3]);
-var dreiecksstaender4 = L.layerGroup([marker4]);
-
 let osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors"
@@ -39,10 +34,10 @@ var OpenStreetMap = {
   "Open Street Map": osm
 };
 var Standorte = {
-    "Standort 1": dreiecksstaender1,
-    "Standort 2": dreiecksstaender2,
-    "Standort 3": dreiecksstaender3,
-    "Standort 4": dreiecksstaender4
+    "Standort 1": marker1,
+    "Standort 2": marker2,
+    "Standort 3": marker3,
+    "Standort 4": marker4
 };
 
 L.control.layers(OpenStreetMap, Standorte).addTo(map);
