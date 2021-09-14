@@ -6,8 +6,8 @@
 // jshint -W083
 "use strict";
 
-const lat = 51.96928869301577;
-const lon = 7.596481577258518;
+const lat = 51.968185447063746;
+const lon = 7.596422955590237;
 
 const start_latlng = [lat, lon];
 
@@ -16,15 +16,13 @@ let map = L.map("map", {
   zoom: 17
 });
 
-// Darstellen der Marker auf der Leaflet-Karte und ermoeglichen der Auswahl durch User
-// Wenn die Koordinaten der Marker bekannt sind, dann muessen die Koordinaten nicht erst aus der Datenbank abgefragt werden --> Zeitersparnis!
-let marker1 = L.marker([51.96898469480461, 7.596480628244305]).addTo(map)
+let marker1 = L.marker([51.96784585567931, 7.596464252259507]).addTo(map)
 .bindPopup('Marker 1'),
- marker2 = L.marker([51.96903558719034, 7.596355131037076]).addTo(map)
+ marker2 = L.marker([51.967875824358856, 7.596282949194921]).addTo(map)
 .bindPopup('Marker 2'),
- marker3 = L.marker([51.96928869301577, 7.596481577258518]).addTo(map)
+ marker3 = L.marker([51.968185447063746, 7.596422955590237]).addTo(map)
 .bindPopup('Marker 3'),
- marker4 = L.marker([51.96967930453592, 7.596549508628987]).addTo(map)
+ marker4 = L.marker([51.9686147392282, 7.596396925911135]).addTo(map)
 .bindPopup('Marker 4');
 
 var dreiecksstaender1 = L.layerGroup([marker1]);
